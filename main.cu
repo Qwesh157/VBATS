@@ -219,7 +219,7 @@ int main(int argc, char **argv)
 			float curRatio = curRatio_M * curRatio_N;
 			curBlockNum = curBlockNum >= optBlockNum ? curBlockNum / curRatio : curBlockNum * curRatio;
 
-			// Step 3. Compute the TBs number and threshold.
+			// Step 3. Compare the TBs number and threshold.
 			if (abs(curBlockNum - optBlockNum) < abs(preBlockNum - optBlockNum))
 			{
 				t_strategy[j] = i;
@@ -257,7 +257,7 @@ int main(int argc, char **argv)
 				float curRatio_N = (n_array[j]) / (curBlockNum_N * tile_strategy[i][1]);
 				float curRatio = curRatio_M * curRatio_N;
 				curBlockNum = curBlockNum >= optBlockNum ? curBlockNum / curRatio : curBlockNum * curRatio;
-				// Step 3. Compute the TBs number and threshold.
+				// Step 3. Compare the TBs number and threshold.
 				if (abs(preBlockNum - optBlockNum) >= abs(curBlockNum - optBlockNum))
 				{
 					t_strategy[j] = i;
