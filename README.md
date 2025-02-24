@@ -4,7 +4,7 @@ General matrix multiplication (GEMM) is a crucial operation in various fields, s
 ## Minimum requirements:
 
 - Architecture: Volta or newer.
-- CUDA Toolkit version: 12.3+(to support cuBLAS grouped GEMM)
+- CUDA Toolkit version: 12.5+(to support cuBLAS grouped GEMM)
 
 
 ## Build and run
