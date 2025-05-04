@@ -10,5 +10,5 @@ General matrix multiplication (GEMM) is a crucial operation in various fields, s
 ## Build and run
 
 ```bash
-$ sh run.sh
+$ bash run.sh
 ```
