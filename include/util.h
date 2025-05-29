@@ -16,7 +16,7 @@ void gen_data(float *data, int num){
 bool CHECK(float *golden, float *data, int num){
     for(int i = 0; i < num; i++){
         if(abs(golden[i] - data[i]) > 1e-6){
-            printf("gold : %f, data : %f \n", golden[num], data[num]);
+            printf("gold : %f, data : %f \n", golden[i], data[i]);
             return false;
         }
     }
